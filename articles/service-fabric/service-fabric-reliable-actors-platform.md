@@ -92,7 +92,7 @@ The Actor Service implements `IActorService` which in turn implements `IService`
 
 #### Enumerating actors
 
-The Actor Service allows a client to enumerate metadata about the actors being hosted by the service. Since the Actor Service is a partitioned stateful service, enumeration is performed per partition. Because each partition may contain a large number of actors, the enumeration is return as a set of paged results. The pages are looped over until all pages are read. The following example shows how to create a list of all active actors in one partition of an actor service:
+The Actor Service allows a client to enumerate metadata about the actors being hosted by the service. Since the Actor Service is a partitioned stateful service, enumeration is performed per partition. Because each partition may contain a large number of actors, the enumeration is returned as a set of paged results. The pages are looped over until all pages are read. The following example shows how to create a list of all active actors in one partition of an actor service:
 
 ```csharp
 IActorService actorServiceProxy = ActorServiceProxy.Create(
